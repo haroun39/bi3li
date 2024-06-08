@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://app.wuilt.com/src_bootstrap_tsx.css">
+  <style>
+    * {
+      font-family: Inter, Almarai;
+      box-sizing: border-box;
+    }
+
+    body {
+      direction: rtl;
+      font-family: Inter, Almarai;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgb(37, 42, 49);
+      box-sizing: border-box;
+      text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      margin: 0px;
+    }
+
+    .gqHxJL {
+      flex: 1 1 0%;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      overflow: auto;
+      padding: 50px;
+    }
+
+    .gmtVaY {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    .gmtVaY> :last-child {
+      margin: 0px !important;
+    }
+
+    .jsMROb {
+      position: relative;
+      width: 35px;
+      height: 35px;
+    }
+
+    .gmtVaY>* {
+      margin: 0px 0px 0px 16px !important;
+    }
+
+    .jsMROb .sc-cVzyXs {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .fkYjLT {
+      width: 35px;
+      height: 35px;
+    }
+
+    .jsMROb .sc-YysOf {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: 0;
+    }
+
+    .hwKAzY {
+      width: 35px;
+      height: 35px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .gqHxJL {
+        padding: 80px;
+      }
+    }
+
+    .iCxNon {
+      display: none;
+      box-sizing: border-box;
+      flex: 0 0 50%;
+      background: linear-gradient(45deg,
+          rgb(16, 24, 40) 0%,
+          #775d0f 100%) no-repeat;
+      height: 100vh;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .iCxNon {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .CqKbw {
+        height: 100vh;
+      }
+    }
+
+    .CqKbw {
+      display: flex;
+    }
+
+    .iYmqlg {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
+
+    .hDUfnO {
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 24px;
+      padding-left: 40px;
+    }
+
+    .iYmqlg>* {
+      margin: 0px 0px 16px !important;
+    }
+
+    .iYmqlg> :last-child {
+      margin: 0px !important;
+    }
+
+    .hDUfnO> :last-child {
+      margin: 0px !important;
+    }
+
+    .iQwHkf {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      place-content: flex-end space-between;
+      align-items: flex-end;
+      margin-bottom: 0px;
+    }
+
+    .hDUfnO>* {
+      margin: 0px 0px 16px !important;
+    }
+
+    .ewjKro {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
+
+    .AgZeE {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0px;
+    }
+
+    .ewjKro> :last-child {
+      margin: 0px !important;
+    }
+
+    .ewjKro>* {
+      margin: 0px 0px 2px !important;
+    }
+
+    .hIXeXk {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+
+    .hIXeXk> :last-child {
+      margin: 0px !important;
+    }
+
+    .ewjKro {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
+
+    .hIXeXk>* {
+      margin: 0px 0px 0px 16px !important;
+    }
+
+    .djjTjA {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+
+    .ewjKro>* {
+      margin: 0px 0px 2px !important;
+    }
+
+    .ewjKro> :last-child {
+      margin: 0px !important;
+    }
+
+    .dauGea {
+      padding: 0px;
+      margin: 0px;
+      color: rgb(95, 115, 140);
+      text-align: right;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .ewjKro>* {
+      margin: 0px 0px 2px !important;
+    }
+
+
+    p {
+      line-height: 1.5;
+    }
+
+    .djjTjA> :last-child {
+      margin: 0px !important;
+    }
+
+    .djjTjA>* {
+      margin: 0px 0px 0px 12px !important;
+    }
+
+    .eCSWuw {
+      padding: 0px;
+      margin: 0px;
+      color: rgb(37, 42, 49);
+      text-align: right;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1024px) {
+      .iYmqlg>* {
+        margin: 0px 0px 16px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hDUfnO> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hDUfnO>* {
+        margin: 0px 0px 16px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .ewjKro> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .ewjKro>* {
+        margin: 0px 0px 2px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hIXeXk> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hIXeXk>* {
+        margin: 0px 0px 0px 16px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .djjTjA> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .djjTjA>* {
+        margin: 0px 0px 0px 12px !important;
+      }
+    }
+
+    .cfHfKA {
+      display: block;
+      text-decoration: none;
+      box-sizing: border-box;
+      margin: 0px 0px 20px;
+      width: 100%;
+      flex: 1 1 100%;
+    }
+
+    .enFtlm {
+      display: block;
+      font-family: Inter, Almarai;
+      font-weight: 400;
+      font-size: 16px;
+      color: rgb(37, 42, 49);
+      margin-bottom: 4px;
+    }
+
+    .eHCVBi {
+      display: block;
+      flex: 1 1 100%;
+      width: 100%;
+    }
+
+    .kZPPes .sc-hRJfrW {
+      border-color: rgb(210, 28, 28);
+    }
+
+    .bRxjdl {
+      position: relative;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      color: rgb(37, 42, 49);
+      border-radius: 4px;
+      border: 1px solid #d7d0bc;
+      cursor: text;
+      padding: 0px 12px;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 34px;
+    }
+
+    .bRxjdl:focus-within {
+      border-color: #ffc107;
+      border-width: 2px;
+    }
+
+    .kZPPes input {
+      border-color: rgb(210, 28, 28) !important;
+    }
+
+    .eOKCEa {
+      padding: 0px;
+      line-height: 34px;
+      border: none;
+      outline: none;
+      color: inherit;
+      font-family: inherit;
+      background-color: transparent;
+      width: calc(100% - 10px);
+      min-width: 100px;
+      font-size: 14px;
+    }
+
+    .jbHMua {
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 4px;
+      color: rgb(210, 28, 28);
+      text-align: right;
+    }
+
+    .jYiHgB {
+      display: flex;
+    }
+
+    .dpCsmA {
+      display: flex;
+      gap: 10px;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 10px 0px;
+      background: #f8f5ec;
+      border: 2px solid #e8dec0;
+    }
+
+    .edyIuQ {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      vertical-align: middle;
+      fill: currentcolor;
+      color: #a87e01;
+      transform: rotate(0deg);
+    }
+
+    .exZfhf {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .hOWaAZ {
+      margin: 0px;
+      color: #775d0f;
+    }
+
+    @media (max-width: 1024px) {
+      .kKvOzb>* {
+        margin: 0px 0px 4px !important;
+      }
+    }
+
+    .kKvOzb>* {
+      margin: 0px 0px 4px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .kKvOzb> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    .kKvOzb> :last-child {
+      margin: 0px !important;
+    }
+
+    .jjHBZn {
+      font-weight: 400;
+      margin: 0px;
+      color: #775d0f;
+    }
+
+    .bsyjIE {
+      height: 36px;
+      position: relative;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      box-sizing: border-box;
+      appearance: none;
+      text-decoration: none;
+      flex: 1 1 auto;
+      max-width: 100%;
+      background: #ffc107;
+      /* opacity: 0.5; */
+      color: rgb(0 0 0);
+      border: 1px solid #e5e7eb;
+      padding: 0px 26px 0px 22px;
+      border-radius: 4px;
+      font-family: Inter, Almarai;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.4;
+      outline: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    .dZSEfb {
+      height: 100%;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      flex-basis: 100%;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .fPZuYw {
+      display: inline-block;
+      width: auto;
+      text-align: right;
+    }
+
+    .bsyjIE .sc-gEvEer {
+      color: rgb(0, 0, 0);
+    }
+
+    .jqiQaJ {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      margin: 0px 8px 0px 0px;
+      color: currentcolor;
+    }
+
+    .gscmk {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      vertical-align: middle;
+      fill: currentcolor;
+      transform: rotate(0deg) scale(-1, 1);
+    }
+
+    .kqdCoa {
+      position: absolute;
+      background: url(/img/backgroung.png) center center / cover;
+      top: 0px;
+      left: 0px;
+      min-width: 20%;
+      max-width: 20%;
+      height: 45%;
+    }
+
+    @media screen and (max-width: 1400px) {
+      .xbYne {
+        padding: 0px 45px;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      .eWqZpU {
+        font-size: 44px;
+        line-height: normal;
+      }
+    }
+
+    .xbYne {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 96px;
+      gap: 20px;
+      position: relative;
+    }
+
+    .eWqZpU {
+      font-size: 50px;
+      line-height: 72px;
+      letter-spacing: -0.02em;
+      font-family: Inter;
+      font-style: normal;
+      color: rgb(255, 255, 255);
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .cwcwHv {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: rgb(234, 236, 240);
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .iaoush {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 8px;
+      padding: 32px 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .fqbwz {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      place-content: center space-between;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .bBFJHo {
+      padding: 0px;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      text-align: right;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .fqbwz> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    .fqbwz> :last-child {
+      margin: 0px !important;
+    }
+
+    .dkDRPa {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      gap: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .fqbwz>* {
+        margin: 0px 0px 0px 16px !important;
+      }
+    }
+
+    .fqbwz>* {
+      margin: 0px 0px 0px 16px !important;
+    }
+
+    .kXIOQZ {
+      padding: 0px;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      text-align: right;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .ilYKCS {
+      padding: 0px;
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      text-align: right;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .eIhUf {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .eIhUf>* {
+        margin: 0px 0px 0px 16px !important;
+      }
+    }
+
+    .eIhUf>* {
+      margin: 0px 0px 0px 16px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .eIhUf> :last-child {
+        margin: 0px !important;
+      }
+    }
+
+    .eIhUf> :last-child {
+      margin: 0px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .eIhUf>* {
+        margin: 0px 0px 0px 16px !important;
+      }
+    }
+
+    .eIhUf>* {
+      margin: 0px 0px 0px 16px !important;
+    }
+
+    .dIeOZx {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin: 0px auto;
+      width: 300px;
+      transform: rotateY(180deg);
+      display: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .dIeOZx {
+        display: flex;
+      }
+    }
+
+    .eWqZpU {
+      font-weight: bold;
+    }
+
+    .theme {
+      cursor: pointer;
+    }
+
+    .theme-checked {
+      border: 2px solid #ffc107 !important;
+      /* Change border color to green */
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".theme").on("click", function () {
+        // Uncheck all checkboxes and remove theme-checked class from all .theme elements
+        $('.theme input[type="checkbox"]').prop("checked", false);
+        $(".theme").removeClass("theme-checked");
+
+        // Check the checkbox inside the clicked .theme and add the theme-checked class
+        $(this).find('input[type="checkbox"]').prop("checked", true);
+        $(this).addClass("theme-checked");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="SplitLayout__StyledSplitContainer-sc-1lkc992-0 CqKbw">
+    <div class="SplitLayout__StyledContentContainer-sc-1lkc992-1 gqHxJL">
+      <div class="sc-gFqAkR gmtVaY sm:hidden">
+        <div size="35" class="sc-ePDLzJ jsMROb">
+          <img src="https://solo-admin.bi3li.shop/Bi3li_logo.png" style="
+          max-width: 70px;
+      " alt="">
+        </div>
+      </div>
+      <div class="sc-gFqAkR iYmqlg">
+        <div class="sc-gFqAkR hDUfnO">
+          <div class="sc-gFqAkR iQwHkf">
+            <div class="sc-gFqAkR ewjKro">
+              <div class="sc-gFqAkR hIXeXk">
+                <div class="sc-gFqAkR ewjKro">
+                  <div class="sc-gFqAkR djjTjA">
+                    <h2 class="sc-kAkpmW eCSWuw">مرحبًا بعودتك!</h2>
+                  </div>
+                  <p class="sc-dAbbOL dauGea">سجل الدخول لحسابك</p>
+                </div>
+              </div>
+            </div>
+            <div class="sc-gFqAkR AgZeE"></div>
+          </div>
+          <div size="35" class="sc-ePDLzJ jsMROb max-sm:hidden">
+            <img src="https://solo-admin.bi3li.shop/Bi3li_logo.png" style="
+            max-width: 80px;
+        " alt="">
+          </div>
+        </div>
+        <form id="myForm">
+          <!--error class= kZPPes -->
+          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
+            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm">
+              <span>الاسم</span></label>
+            <div class="sc-gmPhUn eHCVBi">
+              <div class="sc-hRJfrW bRxjdl">
+                <input type="text" name="name" placeholder="أدخل الاسم" required="" class="sc-bypJrT eOKCEa" value="" />
+              </div>
+            </div>
+            <!-- <div data-test="form-error-message" class="sc-eZkCL jbHMua">
+              <span class="sc-ggpjZQ jYiHgB"></span>البريد الإلكتروني مطلوب
+            </div> -->
+          </div>
+          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
+            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm"><span>البريد
+                الإلكتروني</span></label>
+            <div class="sc-gmPhUn eHCVBi">
+              <div class="sc-hRJfrW bRxjdl">
+                <input type="text" name="email" placeholder="أدخل بريدك الإلكتروني" required="" class="sc-bypJrT eOKCEa"
+                  value="" />
+              </div>
+            </div>
+          </div>
+          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
+            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm"><span>الهاتف</span></label>
+            <div class="sc-gmPhUn eHCVBi">
+              <div class="sc-hRJfrW bRxjdl">
+                <input type="text" name="phone" placeholder="أدخل رقم الهاتف" required="" class="sc-bypJrT eOKCEa"
+                  value="" />
+              </div>
+            </div>
+          </div>
+          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
+            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm"><span>الهاتف</span></label>
+            <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-2">
+              <div class="theme border rounded-[4px] p-2 relative theme-checked">
+                <input id="theme" type="checkbox" class="form-control" placeholder="اختر الثيم" name="theme"
+                  style="position: absolute !important; opacity: 0" value="nexa" checked />
+                <div class="w-full">
+                  <img src="../img/mockup2.png" alt="" srcset="" />
+                </div>
+                <div class="flex justify-between items-center">
+                  <label for="file" class="btn btn-lg basicbtn mt-3 " style="font-weight: bold;">
+                    Nexa
+                  </label>
+                  <div for="file" class="btn bg-[fdcf08] btn-lg basicbtn mt-3">
+                    معاينة
+                  </div>
+                </div>
+              </div>
+              <div class="theme border rounded-[4px] p-2 relative">
+                <input id="theme" type="checkbox" class="form-control" placeholder="اختر الثيم" name="theme"
+                  style="position: absolute !important; opacity: 0" value="nova" />
+                <div class="w-full">
+                  <img src="../img/mockup3.png" alt="" srcset="" />
+                </div>
+                <div class="flex justify-between items-center">
+                  <label for="file" class="btn btn-lg basicbtn mt-3 " style="font-weight: bold;">
+                    Nova
+                  </label>
+                  <div for="file" class="btn bg-[fdcf08] btn-lg basicbtn mt-3">
+                    معاينة
+                  </div>
+                </div>
+              </div>
+              <div class="theme border rounded-[4px] p-2 relative">
+                <input id="theme" type="checkbox" class="form-control" placeholder="اختر الثيم" name="theme"
+                  style="position: absolute !important; opacity: 0" value="solo" />
+                <div class="w-full">
+                  <img src="../img/mockup1.png" alt="" srcset="" />
+                </div>
+                <div class="flex justify-between items-center">
+                  <label for="file" class="btn btn-lg basicbtn mt-3 " style="font-weight: bold;">
+                    Solo
+                  </label>
+                  <div for="file" class="btn bg-[fdcf08] btn-lg basicbtn mt-3">
+                    معاينة
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <br />
+          <button type="submit" class="sc-imWYAI bsyjIE">
+            <div class="sc-aXZVg dZSEfb">
+              <div class="sc-eqUAAy fPZuYw">التالي</div>
+              <div class="sc-gEvEer jqiQaJ">
+                <svg class="sc-jlZhew gscmk" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                  <path d="m14 4.93-1.5 1.5L17.07 11H3v2h14.07l-4.57 4.57 1.5 1.5L21.07 12 14 4.93z"></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="SplitLayout__StyledIllustration-sc-1lkc992-2 iCxNon">
+      <div class="SplitLayout__LinePattern-sc-1lkc992-3 kqdCoa"></div>
+      <div class="LoginAndSignUpCard__CardContainer-sc-1aqg1a2-0 xbYne">
+        <h1 class="LoginAndSignUpCard__CustomHeading-sc-1aqg1a2-1 eWqZpU">
+          انضم إلى أكثر من 400,000+ صاحب مشروع ناجح عبر العالم يثقون بويلت
+        </h1>
+        <p class="LoginAndSignUpCard__CustomParagraph-sc-1aqg1a2-2 cwcwHv">
+          انضم إلى ويلت، أنشئ موقعك أو متجرك وحقق أحلامك في الربح أونلاين!
+        </p>
+        <div class="CustomCard__CardContainer-sc-14dvjy7-0 iaoush">
+          <div class="sc-gFqAkR fqbwz">
+            <h2 class="sc-kAkpmW bBFJHo">4.9/5</h2>
+            <div class="CustomCard__StyledRating-sc-14dvjy7-1 dkDRPa">
+              <img src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg" height="20"
+                width="20" /><img src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                height="20" width="20" /><img
+                src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg" height="20"
+                width="20" /><img src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                height="20" width="20" /><img
+                src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg" height="20" width="20" />
+            </div>
+          </div>
+          <p class="sc-dAbbOL kXIOQZ">معدّل رضا العملاء</p>
+          <p class="sc-dAbbOL ilYKCS">
+            لسهولته، الدعم الفني، السعر المعقول وأكثر!
+          </p>
+          <div class="sc-gFqAkR eIhUf">
+            <img src="https://app.wuilt.com/account/capterra-inc-vector-logo.d674a0a05d362b25a2043c4b4f206557.svg"
+              height="13" width="60" /><img
+              src="https://app.wuilt.com/account/g2-crowd-vector-logo.00fa037d2d386aa45497128a2c548637.svg" height="13"
+              width="48" /><img
+              src="https://app.wuilt.com/account/GoogleMyBusiness.8ea447aa4d757d6a83a578c620d8b944.svg" height="13"
+              width="118" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="SplitLayout__Arrow-sc-1lkc992-4 dIeOZx"><svg width="300" height="250" viewBox="0 0 360 323" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18.3654 142.568C17.5002 141.155 15.6533 140.711 14.2403 141.576C12.8274 142.441 12.3833 144.288 13.2486 145.701L18.3654 142.568ZM204.193 135L204.323 132.003L204.322 132.003L204.193 135ZM165.161 237.947L167.233 235.777L167.233 235.777L165.161 237.947ZM332.216 119.144C332.343 117.492 331.107 116.05 329.455 115.923C327.803 115.796 326.361 117.032 326.234 118.684L332.216 119.144ZM7.06421 167.074C6.78442 168.707 7.88146 170.258 9.51452 170.538C11.1476 170.818 12.6983 169.721 12.978 168.088L7.06421 167.074ZM14.3803 142.138L14.5059 139.141C12.9982 139.077 11.6782 140.144 11.4233 141.631L14.3803 142.138ZM40.5054 145.693C42.1591 145.59 43.4165 144.166 43.3139 142.513C43.2114 140.859 41.7877 139.602 40.134 139.704L40.5054 145.693ZM15.807 144.134C13.2486 145.701 13.2493 145.702 13.2502 145.704C13.2509 145.705 13.2521 145.707 13.2534 145.709C13.2559 145.713 13.2595 145.719 13.264 145.726C13.273 145.741 13.2859 145.762 13.3026 145.789C13.3361 145.843 13.3849 145.921 13.4489 146.023C13.5769 146.228 13.7657 146.527 14.0137 146.914C14.5096 147.688 15.2428 148.813 16.2013 150.235C18.1179 153.078 20.9372 157.11 24.5643 161.891C31.813 171.445 42.3153 184.027 55.3138 196.095C81.1752 220.106 117.628 242.724 158.295 234.031L157.041 228.163C119.355 236.219 84.8768 215.355 59.3962 191.698C46.7236 179.932 36.4518 167.632 29.3443 158.264C25.7933 153.584 23.039 149.644 21.1765 146.881C20.2454 145.5 19.5376 144.413 19.065 143.676C18.8288 143.307 18.6513 143.026 18.5342 142.839C18.4757 142.746 18.4322 142.676 18.404 142.63C18.3899 142.607 18.3796 142.591 18.3732 142.58C18.37 142.575 18.3677 142.571 18.3664 142.569C18.3658 142.568 18.3655 142.568 18.3652 142.567C18.3652 142.567 18.3654 142.568 15.807 144.134ZM158.295 234.031C198.476 225.441 219.538 201.031 225.947 178.129C229.132 166.748 228.717 155.626 225.035 147.094C221.313 138.469 214.173 132.43 204.323 132.003L204.063 137.997C211.206 138.307 216.542 142.556 219.526 149.471C222.55 156.478 223.07 166.148 220.169 176.512C214.407 197.103 195.213 220.003 157.041 228.163L158.295 234.031ZM204.322 132.003C194.904 131.596 184.874 135.675 175.945 142.307C166.976 148.969 158.849 158.4 153.212 169.197C141.918 190.825 140.439 218.487 163.089 240.116L167.233 235.777C147.05 216.504 148.095 191.96 158.53 171.974C163.757 161.963 171.295 153.235 179.523 147.123C187.792 140.981 196.49 137.67 204.063 137.997L204.322 132.003ZM163.089 240.116C174.628 251.138 190.776 254.764 208.182 252.797C225.584 250.83 244.525 243.264 262.205 231.502C297.529 208.003 328.52 167.268 332.216 119.144L326.234 118.684C322.714 164.525 293.082 203.755 258.882 226.506C241.801 237.869 223.755 244.999 207.508 246.835C191.265 248.67 177.103 245.205 167.233 235.777L163.089 240.116ZM12.978 168.088L17.3372 142.645L11.4233 141.631L7.06421 167.074L12.978 168.088ZM14.3803 142.138C14.2546 145.135 14.2547 145.135 14.2549 145.135C14.2551 145.135 14.2554 145.135 14.2557 145.135C14.2564 145.135 14.2574 145.135 14.2587 145.135C14.2614 145.136 14.2652 145.136 14.2704 145.136C14.2806 145.136 14.2958 145.137 14.3159 145.138C14.3559 145.139 14.4153 145.142 14.4928 145.145C14.6478 145.152 14.8754 145.161 15.1667 145.172C15.7493 145.196 16.5867 145.229 17.6072 145.268C19.6478 145.345 22.4228 145.445 25.3579 145.535C31.1442 145.712 37.7986 145.861 40.5054 145.693L40.134 139.704C37.7737 139.851 31.4584 139.719 25.5418 139.537C22.6254 139.448 19.8656 139.349 17.8343 139.272C16.8188 139.233 15.986 139.201 15.4073 139.177C15.118 139.166 14.8923 139.156 14.739 139.15C14.6624 139.147 14.6039 139.145 14.5647 139.143C14.5451 139.142 14.5303 139.142 14.5204 139.141C14.5155 139.141 14.5118 139.141 14.5094 139.141C14.5082 139.141 14.5073 139.141 14.5067 139.141C14.5064 139.141 14.5062 139.141 14.506 139.141C14.5059 139.141 14.5059 139.141 14.3803 142.138Z"
+        fill="#ffc107"></path>
+    </svg></div>
+
+  <script>
+    $(document).ready(function () {
+      $('#myForm').on('submit', function (e) {
+        e.preventDefault(); // Prevent default form submission
+
+        // Serialize form data
+        var formData = $(this).serialize();
+
+        // Send AJAX request
+        $.ajax({
+          type: 'POST',
+          url: 'https://super-admin.bi3li.shop/api/clients', // Replace with your server endpoint
+          data: formData,
+          beforeSend: function (xhr) {
+            xhr.setRequestHeader('Accept', '*/*');
+            xhr.setRequestHeader('Host', '<calculated when request is sent>');
+          },
+          success: function (response) {
+            // Handle success response
+            window.location.href = "/";
+          },
+          error: function (error) {
+            // Handle error response
+            alert('An error occurred while submitting the form.');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
