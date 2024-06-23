@@ -1,964 +1,1119 @@
 <!DOCTYPE html>
 <html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://app.wuilt.com/src_bootstrap_tsx.css"
+    />
+    <style>
+      * {
+        font-family: Inter, Almarai;
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="https://app.wuilt.com/src_bootstrap_tsx.css">
-  <style>
-    * {
-      font-family: Inter, Almarai;
-      box-sizing: border-box;
-    }
+      body {
+        direction: rtl;
+        font-family: Inter, Almarai;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(37, 42, 49);
+        box-sizing: border-box;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        margin: 0px;
+      }
 
-    body {
-      direction: rtl;
-      font-family: Inter, Almarai;
-      font-weight: 400;
-      font-size: 14px;
-      color: rgb(37, 42, 49);
-      box-sizing: border-box;
-      text-size-adjust: 100%;
-      -webkit-font-smoothing: antialiased;
-      margin: 0px;
-    }
-
-    .gqHxJL {
-      flex: 1 1 0%;
-      display: flex;
-      flex-direction: column;
-      -webkit-box-pack: start;
-      justify-content: flex-start;
-      overflow: auto;
-      padding: 25px;
-    }
-
-    .gmtVaY {
-      display: flex;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      justify-content: space-between;
-      margin-bottom: 25px;
-    }
-
-    .gmtVaY> :last-child {
-      margin: 0px !important;
-    }
-
-    .jsMROb {
-      position: relative;
-      width: 35px;
-      height: 35px;
-    }
-
-    .gmtVaY>* {
-      margin: 0px 0px 0px 16px !important;
-    }
-
-    .jsMROb .sc-cVzyXs {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-    }
-
-    .fkYjLT {
-      width: 35px;
-      height: 35px;
-    }
-
-    .jsMROb .sc-YysOf {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      opacity: 0;
-    }
-
-    .hwKAzY {
-      width: 35px;
-      height: 35px;
-    }
-
-    @media screen and (min-width: 1024px) {
       .gqHxJL {
-        padding-top: 40px !important;
-        padding-bottom: 00px !important;
-        padding: 80px;
-      }
-    }
-
-    .iCxNon {
-      display: none;
-      box-sizing: border-box;
-      flex: 0 0 50%;
-      background: linear-gradient(45deg,
-          rgb(16, 24, 40) 0%,
-          #775d0f 100%) no-repeat;
-      height: 100vh;
-    }
-
-    @media screen and (min-width: 1024px) {
-      .iCxNon {
+        flex: 1 1 0%;
         display: flex;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        overflow: auto;
+        padding: 25px;
       }
-    }
 
-    @media screen and (min-width: 1024px) {
-      .CqKbw {
+      .gmtVaY {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 25px;
+      }
+
+      .gmtVaY > :last-child {
+        margin: 0px !important;
+      }
+
+      .jsMROb {
+        position: relative;
+        width: 35px;
+        height: 35px;
+      }
+
+      .gmtVaY > * {
+        margin: 0px 0px 0px 16px !important;
+      }
+
+      .jsMROb .sc-cVzyXs {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      .fkYjLT {
+        width: 35px;
+        height: 35px;
+      }
+
+      .jsMROb .sc-YysOf {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+      }
+
+      .hwKAzY {
+        width: 35px;
+        height: 35px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .gqHxJL {
+          padding-top: 40px !important;
+          padding-bottom: 00px !important;
+          padding: 80px;
+        }
+      }
+
+      .iCxNon {
+        display: none;
+        box-sizing: border-box;
+        flex: 0 0 50%;
+        background: linear-gradient(45deg, rgb(16, 24, 40) 0%, #775d0f 100%)
+          no-repeat;
         height: 100vh;
       }
-    }
 
-    .CqKbw {
-      display: flex;
-    }
-
-    .iYmqlg {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 0px;
-    }
-
-    .hDUfnO {
-      display: flex;
-      /* flex-direction: column; */
-      justify-content: space-between;
-      align-items: start;
-      margin-bottom: 24px;
-      padding-left: 40px;
-    }
-
-    .iYmqlg>* {
-      margin: 0px 0px 16px !important;
-    }
-
-    .iYmqlg> :last-child {
-      margin: 0px !important;
-    }
-
-    .hDUfnO> :last-child {
-      margin: 0px !important;
-    }
-
-    .iQwHkf {
-      display: flex;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      place-content: flex-end space-between;
-      align-items: flex-end;
-      margin-bottom: 0px;
-    }
-
-    .hDUfnO>* {
-      margin: 0px 0px 16px !important;
-    }
-
-    .ewjKro {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 0px;
-    }
-
-    .AgZeE {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 0px;
-    }
-
-    .ewjKro> :last-child {
-      margin: 0px !important;
-    }
-
-    .ewjKro>* {
-      margin: 0px 0px 2px !important;
-    }
-
-    .hIXeXk {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      -webkit-box-align: center;
-      align-items: center;
-      margin-bottom: 0px;
-    }
-
-    .hIXeXk> :last-child {
-      margin: 0px !important;
-    }
-
-    .ewjKro {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 0px;
-    }
-
-    .hIXeXk>* {
-      margin: 0px 0px 0px 16px !important;
-    }
-
-    .djjTjA {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      -webkit-box-align: center;
-      align-items: center;
-      margin-bottom: 0px;
-    }
-
-    .ewjKro>* {
-      margin: 0px 0px 2px !important;
-    }
-
-    .ewjKro> :last-child {
-      margin: 0px !important;
-    }
-
-    .dauGea {
-      padding: 0px;
-      margin: 0px;
-      color: rgb(95, 115, 140);
-      text-align: right;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .ewjKro>* {
-      margin: 0px 0px 2px !important;
-    }
-
-
-    p {
-      line-height: 1.5;
-    }
-
-    .djjTjA> :last-child {
-      margin: 0px !important;
-    }
-
-    .djjTjA>* {
-      margin: 0px 0px 0px 12px !important;
-    }
-
-    .eCSWuw {
-      padding: 0px;
-      margin: 0px;
-      color: rgb(37, 42, 49);
-      text-align: right;
-      font-size: 24px;
-      font-weight: 600;
-    }
-
-    @media (max-width: 1024px) {
-      .iYmqlg>* {
-        margin: 0px 0px 16px !important;
+      @media screen and (min-width: 1024px) {
+        .iCxNon {
+          display: flex;
+        }
       }
-    }
 
-    @media (max-width: 1024px) {
-      .hDUfnO> :last-child {
-        margin: 0px !important;
+      @media screen and (min-width: 1024px) {
+        .CqKbw {
+          height: 100vh;
+        }
       }
-    }
 
-    @media (max-width: 1024px) {
-      .hDUfnO>* {
-        margin: 0px 0px 16px !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .ewjKro> :last-child {
-        margin: 0px !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .ewjKro>* {
-        margin: 0px 0px 2px !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .hIXeXk> :last-child {
-        margin: 0px !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .hIXeXk>* {
-        margin: 0px 0px 0px 16px !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .djjTjA> :last-child {
-        margin: 0px !important;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .djjTjA>* {
-        margin: 0px 0px 0px 12px !important;
-      }
-    }
-
-    .cfHfKA {
-      display: block;
-      text-decoration: none;
-      box-sizing: border-box;
-      margin: 0px 0px 20px;
-      width: 100%;
-      flex: 1 1 100%;
-    }
-
-    .enFtlm {
-      display: block;
-      font-family: Inter, Almarai;
-      font-weight: 400;
-      font-size: 16px;
-      color: rgb(37, 42, 49);
-      margin-bottom: 4px;
-    }
-
-    .eHCVBi {
-      display: block;
-      flex: 1 1 100%;
-      width: 100%;
-    }
-
-    .kZPPes .sc-hRJfrW {
-      border-color: rgb(210, 28, 28);
-    }
-
-    .bRxjdl {
-      position: relative;
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      background-color: rgb(255, 255, 255);
-      color: rgb(37, 42, 49);
-      border-radius: 4px;
-      border: 1px solid #d7d0bc;
-      cursor: text;
-      padding: 0px 12px;
-      font-family: inherit;
-      font-size: 14px;
-      line-height: 34px;
-    }
-
-    .bRxjdl:focus-within {
-      border-color: #ffc107;
-      border-width: 2px;
-    }
-
-    .kZPPes input {
-      border-color: rgb(210, 28, 28) !important;
-    }
-
-    .eOKCEa {
-      padding: 0px;
-      line-height: 34px;
-      border: none;
-      outline: none;
-      color: inherit;
-      font-family: inherit;
-      background-color: transparent;
-      width: calc(100% - 10px);
-      min-width: 100px;
-      font-size: 14px;
-    }
-
-    .jbHMua {
-      font-weight: 400;
-      font-size: 14px;
-      margin-top: 4px;
-      color: rgb(210, 28, 28);
-      text-align: right;
-    }
-
-    .jYiHgB {
-      display: flex;
-    }
-
-    .dpCsmA {
-      display: flex;
-      gap: 10px;
-      padding: 16px;
-      border-radius: 8px;
-      margin: 10px 0px;
-      background: #f8f5ec;
-      border: 2px solid #e8dec0;
-    }
-
-    .edyIuQ {
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-      vertical-align: middle;
-      fill: currentcolor;
-      color: #a87e01;
-      transform: rotate(0deg);
-    }
-
-    .exZfhf {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .hOWaAZ {
-      margin: 0px;
-      color: #775d0f;
-    }
-
-    @media (max-width: 1024px) {
-      .kKvOzb>* {
-        margin: 0px 0px 4px !important;
-      }
-    }
-
-    .kKvOzb>* {
-      margin: 0px 0px 4px !important;
-    }
-
-    @media (max-width: 1024px) {
-      .kKvOzb> :last-child {
-        margin: 0px !important;
-      }
-    }
-
-    .kKvOzb> :last-child {
-      margin: 0px !important;
-    }
-
-    .jjHBZn {
-      font-weight: 400;
-      margin: 0px;
-      color: #775d0f;
-    }
-
-    .bsyjIE {
-      height: 36px;
-      position: relative;
-      display: flex;
-      -webkit-box-pack: justify;
-      justify-content: space-between;
-      box-sizing: border-box;
-      appearance: none;
-      text-decoration: none;
-      flex: 1 1 auto;
-      max-width: 100%;
-      background: #ffc107;
-      /* opacity: 0.5; */
-      color: rgb(0 0 0);
-      border: 1px solid #e5e7eb;
-      padding: 0px 26px 0px 22px;
-      border-radius: 4px;
-      font-family: Inter, Almarai;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 1.4;
-      outline: none;
-      width: 100%;
-      text-align: center;
-    }
-
-    .dZSEfb {
-      height: 100%;
-      display: flex;
-      -webkit-box-pack: center;
-      justify-content: center;
-      flex-basis: 100%;
-      -webkit-box-align: center;
-      align-items: center;
-    }
-
-    .fPZuYw {
-      display: inline-block;
-      width: auto;
-      text-align: right;
-    }
-
-    .bsyjIE .sc-gEvEer {
-      color: rgb(0, 0, 0);
-    }
-
-    .jqiQaJ {
-      display: flex;
-      flex-direction: row;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center;
-      margin: 0px 8px 0px 0px;
-      color: currentcolor;
-    }
-
-    .gscmk {
-      width: 16px;
-      height: 16px;
-      flex-shrink: 0;
-      vertical-align: middle;
-      fill: currentcolor;
-      transform: rotate(0deg) scale(-1, 1);
-    }
-
-    .kqdCoa {
-      position: absolute;
-      background: url(/img/backgroung.png) center center / cover;
-      top: 0px;
-      left: 0px;
-      min-width: 20%;
-      max-width: 20%;
-      height: 45%;
-    }
-
-    @media screen and (max-width: 1400px) {
-      .xbYne {
-        padding: 0px 45px;
-      }
-    }
-
-    @media screen and (max-width: 1400px) {
-      .eWqZpU {
-        font-size: 44px;
-        line-height: normal;
-      }
-    }
-
-    .xbYne {
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0px 96px;
-      gap: 20px;
-      position: relative;
-    }
-
-    .eWqZpU {
-      font-size: 35px;
-      line-height: 72px;
-      letter-spacing: -0.02em;
-      /* font-family: Inter; */
-      font-style: normal;
-      color: rgb(255, 255, 255);
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-
-    .cwcwHv {
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      color: rgb(234, 236, 240);
-      margin-bottom: 0px;
-      margin-top: 0px;
-    }
-
-    .iaoush {
-      width: 100%;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      background-color: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
-      border-radius: 8px;
-      padding: 32px 24px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .fqbwz {
-      display: flex;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      place-content: center space-between;
-      -webkit-box-align: center;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    .bBFJHo {
-      padding: 0px;
-      margin: 0px;
-      color: rgb(255, 255, 255);
-      text-align: right;
-      font-size: 36px;
-      font-weight: 700;
-    }
-
-    @media (max-width: 1024px) {
-      .fqbwz> :last-child {
-        margin: 0px !important;
-      }
-    }
-
-    .fqbwz> :last-child {
-      margin: 0px !important;
-    }
-
-    .dkDRPa {
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      gap: 4px;
-    }
-
-    @media (max-width: 1024px) {
-      .fqbwz>* {
-        margin: 0px 0px 0px 16px !important;
-      }
-    }
-
-    .fqbwz>* {
-      margin: 0px 0px 0px 16px !important;
-    }
-
-    .kXIOQZ {
-      padding: 0px;
-      margin: 0px;
-      color: rgb(255, 255, 255);
-      text-align: right;
-      font-size: 20px;
-      font-weight: 400;
-    }
-
-    .ilYKCS {
-      padding: 0px;
-      margin: 0px;
-      color: rgb(255, 255, 255);
-      text-align: right;
-      font-size: 14px;
-      font-weight: 400;
-    }
-
-    .eIhUf {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      -webkit-box-align: center;
-      align-items: center;
-      margin-bottom: 0px;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 1024px) {
-      .eIhUf>* {
-        margin: 0px 0px 0px 16px !important;
-      }
-    }
-
-    .eIhUf>* {
-      margin: 0px 0px 0px 16px !important;
-    }
-
-    @media (max-width: 1024px) {
-      .eIhUf> :last-child {
-        margin: 0px !important;
-      }
-    }
-
-    .eIhUf> :last-child {
-      margin: 0px !important;
-    }
-
-    @media (max-width: 1024px) {
-      .eIhUf>* {
-        margin: 0px 0px 0px 16px !important;
-      }
-    }
-
-    .eIhUf>* {
-      margin: 0px 0px 0px 16px !important;
-    }
-
-    .dIeOZx {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin: 0px auto;
-      width: 300px;
-      transform: rotateY(180deg);
-      display: none;
-    }
-
-    @media screen and (min-width: 1024px) {
-      .dIeOZx {
+      .CqKbw {
         display: flex;
       }
-    }
 
-    .eWqZpU {
-      font-weight: bold;
-    }
+      .iYmqlg {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+      }
 
-    .theme {
-      cursor: pointer;
-    }
+      .hDUfnO {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 24px;
+        padding-left: 40px;
+      }
 
-    .theme-checked {
-      border: 2px solid #ffc107 !important;
-      /* Change border color to green */
-    }
+      .iYmqlg > * {
+        margin: 0px 0px 16px !important;
+      }
 
-    /* width */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
+      .iYmqlg > :last-child {
+        margin: 0px !important;
+      }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
+      .hDUfnO > :last-child {
+        margin: 0px !important;
+      }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #c7c7c7;
-    }
+      .iQwHkf {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        place-content: flex-end space-between;
+        align-items: flex-end;
+        margin-bottom: 0px;
+      }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-  </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".theme").on("click", function () {
-        // Uncheck all checkboxes and remove theme-checked class from all .theme elements
-        $('.theme input[type="checkbox"]').prop("checked", false);
-        $(".theme").removeClass("theme-checked");
+      .hDUfnO > * {
+        margin: 0px 0px 16px !important;
+      }
 
-        // Check the checkbox inside the clicked .theme and add the theme-checked class
-        $(this).find('input[type="checkbox"]').prop("checked", true);
-        $(this).addClass("theme-checked");
-      });
-    });
-  </script>
-</head>
+      .ewjKro {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+      }
 
-<body>
-  <div class="SplitLayout__StyledSplitContainer-sc-1lkc992-0 CqKbw">
-    <div class="SplitLayout__StyledContentContainer-sc-1lkc992-1 gqHxJL">
-      <div class="sc-gFqAkR gmtVaY sm:hidden">
-        <div size="35" class="sc-ePDLzJ jsMROb">
-          <img src="https://solo-admin.bi3li.shop/Bi3li_logo.png" style="
-          max-width: 70px;
-      " alt="">
-        </div>
-      </div>
-      <div class="sc-gFqAkR iYmqlg">
-        <div class="sc-gFqAkR hDUfnO">
-          <div class="sc-gFqAkR iQwHkf">
-            <div class="sc-gFqAkR ewjKro">
-              <div class="sc-gFqAkR hIXeXk">
-                <div class="sc-gFqAkR ewjKro">
-                  <div class="sc-gFqAkR djjTjA">
-                    <h2 class="sc-kAkpmW eCSWuw">إنضم إلينا الأن !</h2>
-                  </div>
-                  <p class="sc-dAbbOL dauGea">سجل معلوماتك</p>
-                </div>
-              </div>
-            </div>
-            <div class="sc-gFqAkR AgZeE"></div>
-          </div>
-          <div size="35" class="sc-ePDLzJ jsMROb max-sm:hidden">
-            <img src="https://solo-admin.bi3li.shop/Bi3li_logo.png" style="
-            max-width: 80px;
-        " alt="">
-          </div>
-        </div>
-        <form id="myForm">
-          <!--error class= kZPPes -->
-          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
-            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm">
-              <span>الاسم</span></label>
-            <div class="sc-gmPhUn eHCVBi">
-              <div class="sc-hRJfrW bRxjdl">
-                <input type="text" name="name" placeholder="أدخل الاسم" required="" class="sc-bypJrT eOKCEa" value="" />
-              </div>
-            </div>
-            <!-- <div data-test="form-error-message" class="sc-eZkCL jbHMua">
-              <span class="sc-ggpjZQ jYiHgB"></span>البريد الإلكتروني مطلوب
-            </div> -->
-          </div>
-          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
-            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm"><span>البريد
-                الإلكتروني</span></label>
-            <div class="sc-gmPhUn eHCVBi">
-              <div class="sc-hRJfrW bRxjdl">
-                <input type="text" name="email" placeholder="أدخل بريدك الإلكتروني" required="" class="sc-bypJrT eOKCEa"
-                  value="" />
-              </div>
-            </div>
-          </div>
-          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
-            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm"><span>الهاتف</span></label>
-            <div class="sc-gmPhUn eHCVBi">
-              <div class="sc-hRJfrW bRxjdl">
-                <input type="text" name="phone" placeholder="أدخل رقم الهاتف" required="" class="sc-bypJrT eOKCEa"
-                  value="" />
-              </div>
-            </div>
-          </div>
-          <div class="sc-jEACwC cfHfKA sc-hIUJlX ">
-            <label id="email-uid1-label" for="email-uid1" class="sc-dZoequ enFtlm"><span>اختر الثيم</span></label>
-            <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-2">
-              <div class="theme border rounded-[4px] p-2 relative theme-checked">
-                <input id="theme" type="checkbox" class="form-control" placeholder="اختر الثيم" name="theme"
-                  style="position: absolute !important; opacity: 0" value="nexa" checked />
-                <div class="w-full">
-                  <img src="../img/mockup2.png" alt="" srcset="" />
-                </div>
-                <div class="flex justify-between items-center">
-                  <label for="file" class="btn btn-lg basicbtn mt-3 " style="font-weight: bold;">
-                    Nexa
-                  </label>
-                  <a href="https://nexa.bi3li.shop" target="_blank" for="file"
-                    class="btn bg-[fdcf08] btn-lg basicbtn mt-3  hover:text-[#ffc107] hover:underline p-1 px-2 rounded-[4px]  ">
-                    معاينة
-                  </a>
-                </div>
-              </div>
-              <div class="theme border rounded-[4px] p-2 relative">
-                <input id="theme" type="checkbox" class="form-control" placeholder="اختر الثيم" name="theme"
-                  style="position: absolute !important; opacity: 0" value="nova" />
-                <div class="w-full">
-                  <img src="../img/mockup3.png" alt="" srcset="" />
-                </div>
-                <div class="flex justify-between items-center">
-                  <label for="file" class="btn btn-lg basicbtn mt-3 " style="font-weight: bold;">
-                    Nova
-                  </label>
-                  <a href="https://nova.bi3li.shop" target="_blank" for="file"
-                    class="btn bg-[fdcf08] btn-lg basicbtn mt-3  hover:text-[#ffc107] hover:underline p-1 px-2 rounded-[4px]  ">
-                    معاينة
-                  </a>
-                </div>
-              </div>
-              <div class="theme border rounded-[4px] p-2 relative">
-                <input id="theme" type="checkbox" class="form-control" placeholder="اختر الثيم" name="theme"
-                  style="position: absolute !important; opacity: 0" value="solo" />
-                <div class="w-full">
-                  <img src="../img/mockup1.png" alt="" srcset="" />
-                </div>
-                <div class="flex justify-between items-center">
-                  <label for="file" class="btn btn-lg basicbtn mt-3 " style="font-weight: bold;">
-                    Solo
-                  </label>
-                  <a href="https://solo.bi3li.shop" target="_blank" for="file"
-                    class="btn bg-[fdcf08] btn-lg basicbtn mt-3  hover:text-[#ffc107] hover:underline p-1 px-2 rounded-[4px]  ">
-                    معاينة
-                  </a>
-                </div>
-              </div>
+      .AgZeE {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+      }
 
-            </div>
-          </div>
-          <div class="sc-jEACwC cfHfKA sc-hIUJlX flex gap-3">
-            <input type="checkbox" name="" id="" required>
-            <label for="email-uid1" class="sc-dZoequ enFtlm"><span>أوافق على شروط الاستخدام وسياسة
-                الخصوصية</span></label>
-          </div>
-          <br />
-          <button type="submit" class="sc-imWYAI bsyjIE">
-            <div class="sc-aXZVg dZSEfb">
-              <div class="sc-eqUAAy fPZuYw">التالي</div>
-              <div class="sc-gEvEer jqiQaJ">
-                <svg class="sc-jlZhew gscmk" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                  <path d="m14 4.93-1.5 1.5L17.07 11H3v2h14.07l-4.57 4.57 1.5 1.5L21.07 12 14 4.93z"></path>
-                </svg>
-              </div>
-            </div>
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="SplitLayout__StyledIllustration-sc-1lkc992-2 iCxNon">
-      <div class="SplitLayout__LinePattern-sc-1lkc992-3 kqdCoa"></div>
-      <div class="LoginAndSignUpCard__CardContainer-sc-1aqg1a2-0 xbYne">
-        <h1 class="LoginAndSignUpCard__CustomHeading-sc-1aqg1a2-1 eWqZpU">
-          انضم إلى أصحاب المشاريع في التجارة الإلكترونية بالجزائر الذين يثقون ببيعلي
-        </h1>
-        <p class="LoginAndSignUpCard__CustomParagraph-sc-1aqg1a2-2 cwcwHv">
-          انضم إلى بيعلي، أنشئ موقعك أو متجرك وحقق أحلامك في الربح أونلاين!
-        </p>
-        <div class="CustomCard__CardContainer-sc-14dvjy7-0 iaoush">
-          <div class="sc-gFqAkR fqbwz">
-            <h2 class="sc-kAkpmW bBFJHo">4.9/5</h2>
-            <div class="CustomCard__StyledRating-sc-14dvjy7-1 dkDRPa">
-              <img src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg" height="20"
-                width="20" /><img src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
-                height="20" width="20" /><img
-                src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg" height="20"
-                width="20" /><img src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
-                height="20" width="20" /><img
-                src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg" height="20" width="20" />
-            </div>
-          </div>
-          <p class="sc-dAbbOL kXIOQZ">معدّل رضا العملاء</p>
-          <p class="sc-dAbbOL ilYKCS">
-            لسهولته، الدعم الفني، السعر المعقول وأكثر!
-          </p>
-          <div class="sc-gFqAkR eIhUf">
-            <a href="#">
-              <img src="/img/icons8-facebook-24.png" height="20" width="20" />
-            </a>
-            <a href="#">
-              <img src="/img/icons8-instagram-24.png" height="20" width="20" />
-            </a>
-            <a href="#">
-              <img src="/img/icons8-whatsapp-24.png" height="20" width="20" />
-            </a>
-            <a href="#">
-              <img src="/img/icons8-tiktok-24.png" height="20" width="20" />
-            </a>
-            <a href="#">
-              <img src="/img/icons8-youtube-24.png" height="20" width="20" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      .ewjKro > :last-child {
+        margin: 0px !important;
+      }
 
+      .ewjKro > * {
+        margin: 0px 0px 2px !important;
+      }
 
-  <script>
-    $(document).ready(function () {
-      $('#myForm').on('submit', function (e) {
-        e.preventDefault(); // Prevent default form submission
+      .hIXeXk {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 0px;
+      }
 
-        // Serialize form data
-        var formData = $(this).serialize();
+      .hIXeXk > :last-child {
+        margin: 0px !important;
+      }
 
-        // Send AJAX request
-        $.ajax({
-          type: 'POST',
-          url: 'https://super-admin.bi3li.shop/api/clients', // Replace with your server endpoint
-          data: formData,
-          beforeSend: function (xhr) {
-            xhr.setRequestHeader('Accept', '*/*');
-            xhr.setRequestHeader('Host', '<calculated when request is sent>');
-          },
-          success: function (response) {
-            // Handle success response
-            window.location.href = "/";
-          },
-          error: function (error) {
-            // Handle error response
-            alert('An error occurred while submitting the form.');
-          }
+      .ewjKro {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+      }
+
+      .hIXeXk > * {
+        margin: 0px 0px 0px 16px !important;
+      }
+
+      .djjTjA {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+
+      .ewjKro > * {
+        margin: 0px 0px 2px !important;
+      }
+
+      .ewjKro > :last-child {
+        margin: 0px !important;
+      }
+
+      .dauGea {
+        padding: 0px;
+        margin: 0px;
+        color: rgb(95, 115, 140);
+        text-align: right;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .ewjKro > * {
+        margin: 0px 0px 2px !important;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .djjTjA > :last-child {
+        margin: 0px !important;
+      }
+
+      .djjTjA > * {
+        margin: 0px 0px 0px 12px !important;
+      }
+
+      .eCSWuw {
+        padding: 0px;
+        margin: 0px;
+        color: rgb(37, 42, 49);
+        text-align: right;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 1024px) {
+        .iYmqlg > * {
+          margin: 0px 0px 16px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .hDUfnO > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .hDUfnO > * {
+          margin: 0px 0px 16px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .ewjKro > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .ewjKro > * {
+          margin: 0px 0px 2px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .hIXeXk > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .hIXeXk > * {
+          margin: 0px 0px 0px 16px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .djjTjA > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .djjTjA > * {
+          margin: 0px 0px 0px 12px !important;
+        }
+      }
+
+      .cfHfKA {
+        display: block;
+        text-decoration: none;
+        box-sizing: border-box;
+        margin: 0px 0px 20px;
+        width: 100%;
+        flex: 1 1 100%;
+      }
+
+      .enFtlm {
+        display: block;
+        font-family: Inter, Almarai;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgb(37, 42, 49);
+        margin-bottom: 4px;
+      }
+
+      .eHCVBi {
+        display: block;
+        flex: 1 1 100%;
+        width: 100%;
+      }
+
+      .kZPPes .sc-hRJfrW {
+        border-color: rgb(210, 28, 28);
+      }
+
+      .bRxjdl {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        color: rgb(37, 42, 49);
+        border-radius: 4px;
+        border: 1px solid #d7d0bc;
+        cursor: text;
+        padding: 0px 12px;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 34px;
+      }
+
+      .bRxjdl:focus-within {
+        border-color: #ffc107;
+        border-width: 2px;
+      }
+
+      .kZPPes input {
+        border-color: rgb(210, 28, 28) !important;
+      }
+
+      .eOKCEa {
+        padding: 0px;
+        line-height: 34px;
+        border: none;
+        outline: none;
+        color: inherit;
+        font-family: inherit;
+        background-color: transparent;
+        width: calc(100% - 10px);
+        min-width: 100px;
+        font-size: 14px;
+      }
+
+      .jbHMua {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 4px;
+        color: rgb(210, 28, 28);
+        text-align: right;
+      }
+
+      .jYiHgB {
+        display: flex;
+      }
+
+      .dpCsmA {
+        display: flex;
+        gap: 10px;
+        padding: 16px;
+        border-radius: 8px;
+        margin: 10px 0px;
+        background: #f8f5ec;
+        border: 2px solid #e8dec0;
+      }
+
+      .edyIuQ {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        vertical-align: middle;
+        fill: currentcolor;
+        color: #a87e01;
+        transform: rotate(0deg);
+      }
+
+      .exZfhf {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hOWaAZ {
+        margin: 0px;
+        color: #775d0f;
+      }
+
+      @media (max-width: 1024px) {
+        .kKvOzb > * {
+          margin: 0px 0px 4px !important;
+        }
+      }
+
+      .kKvOzb > * {
+        margin: 0px 0px 4px !important;
+      }
+
+      @media (max-width: 1024px) {
+        .kKvOzb > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      .kKvOzb > :last-child {
+        margin: 0px !important;
+      }
+
+      .jjHBZn {
+        font-weight: 400;
+        margin: 0px;
+        color: #775d0f;
+      }
+
+      .bsyjIE {
+        height: 36px;
+        position: relative;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        box-sizing: border-box;
+        appearance: none;
+        text-decoration: none;
+        flex: 1 1 auto;
+        max-width: 100%;
+        background: #ffc107;
+        /* opacity: 0.5; */
+        color: rgb(0 0 0);
+        border: 1px solid #e5e7eb;
+        padding: 0px 26px 0px 22px;
+        border-radius: 4px;
+        font-family: Inter, Almarai;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.4;
+        outline: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      .dZSEfb {
+        height: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-basis: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+
+      .fPZuYw {
+        display: inline-block;
+        width: auto;
+        text-align: right;
+      }
+
+      .bsyjIE .sc-gEvEer {
+        color: rgb(0, 0, 0);
+      }
+
+      .jqiQaJ {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin: 0px 8px 0px 0px;
+        color: currentcolor;
+      }
+
+      .gscmk {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        vertical-align: middle;
+        fill: currentcolor;
+        transform: rotate(0deg) scale(-1, 1);
+      }
+
+      .kqdCoa {
+        position: absolute;
+        background: url(/img/backgroung.png) center center / cover;
+        top: 0px;
+        left: 0px;
+        min-width: 20%;
+        max-width: 20%;
+        height: 45%;
+      }
+
+      @media screen and (max-width: 1400px) {
+        .xbYne {
+          padding: 0px 45px;
+        }
+      }
+
+      @media screen and (max-width: 1400px) {
+        .eWqZpU {
+          font-size: 44px;
+          line-height: normal;
+        }
+      }
+
+      .xbYne {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 96px;
+        gap: 20px;
+        position: relative;
+      }
+
+      .eWqZpU {
+        font-size: 35px;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+        /* font-family: Inter; */
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+
+      .cwcwHv {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgb(234, 236, 240);
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+
+      .iaoush {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        border-radius: 8px;
+        padding: 32px 24px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .fqbwz {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        place-content: center space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .bBFJHo {
+        padding: 0px;
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        text-align: right;
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      @media (max-width: 1024px) {
+        .fqbwz > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      .fqbwz > :last-child {
+        margin: 0px !important;
+      }
+
+      .dkDRPa {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        gap: 4px;
+      }
+
+      @media (max-width: 1024px) {
+        .fqbwz > * {
+          margin: 0px 0px 0px 16px !important;
+        }
+      }
+
+      .fqbwz > * {
+        margin: 0px 0px 0px 16px !important;
+      }
+
+      .kXIOQZ {
+        padding: 0px;
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        text-align: right;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .ilYKCS {
+        padding: 0px;
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        text-align: right;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .eIhUf {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 1024px) {
+        .eIhUf > * {
+          margin: 0px 0px 0px 16px !important;
+        }
+      }
+
+      .eIhUf > * {
+        margin: 0px 0px 0px 16px !important;
+      }
+
+      @media (max-width: 1024px) {
+        .eIhUf > :last-child {
+          margin: 0px !important;
+        }
+      }
+
+      .eIhUf > :last-child {
+        margin: 0px !important;
+      }
+
+      @media (max-width: 1024px) {
+        .eIhUf > * {
+          margin: 0px 0px 0px 16px !important;
+        }
+      }
+
+      .eIhUf > * {
+        margin: 0px 0px 0px 16px !important;
+      }
+
+      .dIeOZx {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto;
+        width: 300px;
+        transform: rotateY(180deg);
+        display: none;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .dIeOZx {
+          display: flex;
+        }
+      }
+
+      .eWqZpU {
+        font-weight: bold;
+      }
+
+      .theme {
+        cursor: pointer;
+      }
+
+      .theme-checked {
+        border: 2px solid #ffc107 !important;
+        /* Change border color to green */
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #c7c7c7;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".theme").on("click", function () {
+          // Uncheck all checkboxes and remove theme-checked class from all .theme elements
+          $('.theme input[type="checkbox"]').prop("checked", false);
+          $(".theme").removeClass("theme-checked");
+
+          // Check the checkbox inside the clicked .theme and add the theme-checked class
+          $(this).find('input[type="checkbox"]').prop("checked", true);
+          $(this).addClass("theme-checked");
         });
       });
-    });
-  </script>
-</body>
+    </script>
+  </head>
 
+  <body>
+    <div class="SplitLayout__StyledSplitContainer-sc-1lkc992-0 CqKbw">
+      <div class="SplitLayout__StyledContentContainer-sc-1lkc992-1 gqHxJL">
+        <div class="sc-gFqAkR gmtVaY sm:hidden">
+          <div size="35" class="sc-ePDLzJ jsMROb">
+            <img
+              src="https://solo-admin.bi3li.shop/Bi3li_logo.png"
+              style="max-width: 70px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="sc-gFqAkR iYmqlg">
+          <!-- form  -->
+          <div id="form" >
+            <div class="sc-gFqAkR hDUfnO">
+              <div class="sc-gFqAkR iQwHkf">
+                <div class="sc-gFqAkR ewjKro">
+                  <div class="sc-gFqAkR hIXeXk">
+                    <div class="sc-gFqAkR ewjKro">
+                      <div class="sc-gFqAkR djjTjA">
+                        <h2 class="sc-kAkpmW eCSWuw">إنضم إلينا الأن !</h2>
+                      </div>
+                      <p class="sc-dAbbOL dauGea">سجل معلوماتك</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sc-gFqAkR AgZeE"></div>
+              </div>
+              <div size="35" class="sc-ePDLzJ jsMROb max-sm:hidden">
+                <img
+                  src="https://solo-admin.bi3li.shop/Bi3li_logo.png"
+                  style="max-width: 80px"
+                  alt=""
+                />
+              </div>
+            </div>
+            <form id="myForm" >
+              <!--error class= kZPPes -->
+              <div class="sc-jEACwC cfHfKA sc-hIUJlX">
+                <label
+                  id="email-uid1-label"
+                  for="email-uid1"
+                  class="sc-dZoequ enFtlm"
+                >
+                  <span>الاسم</span></label
+                >
+                <div class="sc-gmPhUn eHCVBi">
+                  <div class="sc-hRJfrW bRxjdl">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="أدخل الاسم"
+                      required=""
+                      class="sc-bypJrT eOKCEa"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <!-- <div data-test="form-error-message" class="sc-eZkCL jbHMua">
+                <span class="sc-ggpjZQ jYiHgB"></span>البريد الإلكتروني مطلوب
+              </div> -->
+              </div>
+              <div class="sc-jEACwC cfHfKA sc-hIUJlX">
+                <label
+                  id="email-uid1-label"
+                  for="email-uid1"
+                  class="sc-dZoequ enFtlm"
+                  ><span>البريد الإلكتروني</span></label
+                >
+                <div class="sc-gmPhUn eHCVBi">
+                  <div class="sc-hRJfrW bRxjdl">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="أدخل بريدك الإلكتروني"
+                      required=""
+                      class="sc-bypJrT eOKCEa"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="sc-jEACwC cfHfKA sc-hIUJlX">
+                <label
+                  id="email-uid1-label"
+                  for="email-uid1"
+                  class="sc-dZoequ enFtlm"
+                  ><span>الهاتف</span></label
+                >
+                <div class="sc-gmPhUn eHCVBi">
+                  <div class="sc-hRJfrW bRxjdl">
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="أدخل رقم الهاتف"
+                      required=""
+                      class="sc-bypJrT eOKCEa"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="sc-jEACwC cfHfKA sc-hIUJlX">
+                <label
+                  id="email-uid1-label"
+                  for="email-uid1"
+                  class="sc-dZoequ enFtlm"
+                  ><span>اختر الثيم</span></label
+                >
+                <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-2">
+                  <div
+                    class="theme border rounded-[4px] p-2 relative theme-checked"
+                  >
+                    <input
+                      id="theme"
+                      type="checkbox"
+                      class="form-control"
+                      placeholder="اختر الثيم"
+                      name="theme"
+                      style="position: absolute !important; opacity: 0"
+                      value="nexa"
+                      checked
+                    />
+                    <div class="w-full">
+                      <img src="../img/mockup2.png" alt="" srcset="" />
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <label
+                        for="file"
+                        class="btn btn-lg basicbtn mt-3"
+                        style="font-weight: bold"
+                      >
+                        Nexa
+                      </label>
+                      <a
+                        href="https://nexa.bi3li.shop"
+                        target="_blank"
+                        for="file"
+                        class="btn bg-[fdcf08] btn-lg basicbtn mt-3 hover:text-[#ffc107] hover:underline p-1 px-2 rounded-[4px]"
+                      >
+                        معاينة
+                      </a>
+                    </div>
+                  </div>
+                  <div class="theme border rounded-[4px] p-2 relative">
+                    <input
+                      id="theme"
+                      type="checkbox"
+                      class="form-control"
+                      placeholder="اختر الثيم"
+                      name="theme"
+                      style="position: absolute !important; opacity: 0"
+                      value="nova"
+                    />
+                    <div class="w-full">
+                      <img src="../img/mockup3.png" alt="" srcset="" />
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <label
+                        for="file"
+                        class="btn btn-lg basicbtn mt-3"
+                        style="font-weight: bold"
+                      >
+                        Nova
+                      </label>
+                      <a
+                        href="https://nova.bi3li.shop"
+                        target="_blank"
+                        for="file"
+                        class="btn bg-[fdcf08] btn-lg basicbtn mt-3 hover:text-[#ffc107] hover:underline p-1 px-2 rounded-[4px]"
+                      >
+                        معاينة
+                      </a>
+                    </div>
+                  </div>
+                  <div class="theme border rounded-[4px] p-2 relative">
+                    <input
+                      id="theme"
+                      type="checkbox"
+                      class="form-control"
+                      placeholder="اختر الثيم"
+                      name="theme"
+                      style="position: absolute !important; opacity: 0"
+                      value="solo"
+                    />
+                    <div class="w-full">
+                      <img src="../img/mockup1.png" alt="" srcset="" />
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <label
+                        for="file"
+                        class="btn btn-lg basicbtn mt-3"
+                        style="font-weight: bold"
+                      >
+                        Solo
+                      </label>
+                      <a
+                        href="https://solo.bi3li.shop"
+                        target="_blank"
+                        for="file"
+                        class="btn bg-[fdcf08] btn-lg basicbtn mt-3 hover:text-[#ffc107] hover:underline p-1 px-2 rounded-[4px]"
+                      >
+                        معاينة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sc-jEACwC cfHfKA sc-hIUJlX flex gap-3">
+                <input type="checkbox" name="" id="" required />
+                <label for="email-uid1" class="sc-dZoequ enFtlm"
+                  ><span>أوافق على شروط الاستخدام وسياسة الخصوصية</span></label
+                >
+              </div>
+              <br />
+              <button type="submit" class="sc-imWYAI bsyjIE">
+                <div class="sc-aXZVg dZSEfb">
+                  <div class="sc-eqUAAy fPZuYw">التالي</div>
+                  <div class="sc-gEvEer jqiQaJ">
+                    <svg
+                      class="sc-jlZhew gscmk"
+                      viewBox="0 0 24 24"
+                      preserveAspectRatio="xMidYMid meet"
+                    >
+                      <path
+                        d="m14 4.93-1.5 1.5L17.07 11H3v2h14.07l-4.57 4.57 1.5 1.5L21.07 12 14 4.93z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </form>
+          </div>
+          <!-- thank div  -->
+
+          <div id="thank-div" class="hidden" >
+            <div class="flex flex-col items-center gap-5">
+              <div class="h-[500px] " style="overflow-y: hidden;">
+                <img
+                src="../img/thanks_order.gif"
+                id="thanks1"
+                class="w-full h-full object-cover"
+                alt=""
+                srcset=""
+                />
+                <img
+                  src="../img/thanks_order2.png"
+                  id="thanks2"
+                  class=" w-full h-full object-cover"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <h1 class="text-xl font-bold">
+                شكرا لك على التسجيل معنا 
+              </h1>
+              <p class="text-center">
+                سيتم التواصل معك على البريد الإلكتروني في أقرب وقت يمكنك الانتقال إلى الصفحة الرئيسية
+                <a href="/" class="underline font-bold">من هنا</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="SplitLayout__StyledIllustration-sc-1lkc992-2 iCxNon">
+        <div class="SplitLayout__LinePattern-sc-1lkc992-3 kqdCoa"></div>
+        <div class="LoginAndSignUpCard__CardContainer-sc-1aqg1a2-0 xbYne">
+          <h1 class="LoginAndSignUpCard__CustomHeading-sc-1aqg1a2-1 eWqZpU">
+            انضم إلى أصحاب المشاريع في التجارة الإلكترونية بالجزائر الذين يثقون
+            ببيعلي
+          </h1>
+          <p class="LoginAndSignUpCard__CustomParagraph-sc-1aqg1a2-2 cwcwHv">
+            انضم إلى بيعلي، أنشئ موقعك أو متجرك وحقق أحلامك في الربح أونلاين!
+          </p>
+          <div class="CustomCard__CardContainer-sc-14dvjy7-0 iaoush">
+            <div class="sc-gFqAkR fqbwz">
+              <h2 class="sc-kAkpmW bBFJHo">4.9/5</h2>
+              <div class="CustomCard__StyledRating-sc-14dvjy7-1 dkDRPa">
+                <img
+                  src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                  height="20"
+                  width="20"
+                /><img
+                  src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                  height="20"
+                  width="20"
+                /><img
+                  src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                  height="20"
+                  width="20"
+                /><img
+                  src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                  height="20"
+                  width="20"
+                /><img
+                  src="https://app.wuilt.com/account/Star.c06f37fa5a188c83aaf0d1faebe81f64.svg"
+                  height="20"
+                  width="20"
+                />
+              </div>
+            </div>
+            <p class="sc-dAbbOL kXIOQZ">معدّل رضا العملاء</p>
+            <p class="sc-dAbbOL ilYKCS">
+              لسهولته، الدعم الفني، السعر المعقول وأكثر!
+            </p>
+            <div class="sc-gFqAkR eIhUf">
+              <a href="#">
+                <img src="/img/icons8-facebook-24.png" height="20" width="20" />
+              </a>
+              <a href="#">
+                <img
+                  src="/img/icons8-instagram-24.png"
+                  height="20"
+                  width="20"
+                />
+              </a>
+              <a href="#">
+                <img src="/img/icons8-whatsapp-24.png" height="20" width="20" />
+              </a>
+              <a href="#">
+                <img src="/img/icons8-tiktok-24.png" height="20" width="20" />
+              </a>
+              <a href="#">
+                <img src="/img/icons8-youtube-24.png" height="20" width="20" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#myForm").on("submit", function (e) {
+          e.preventDefault(); // Prevent default form submission
+
+          // Serialize form data
+          var formData = $(this).serialize();
+
+          // Send AJAX request
+          $.ajax({
+            type: "POST",
+            url: "https://super-admin.bi3li.shop/api/clients", // Replace with your server endpoint
+            data: formData,
+            beforeSend: function (xhr) {
+              xhr.setRequestHeader("Accept", "*/*");
+              xhr.setRequestHeader("Host", "<calculated when request is sent>");
+            },
+            success: function (response) {
+              // Handle success response
+              //window.location.href = "/";
+              $("#form").addClass("hidden");
+              $("#thank-div").removeClass("hidden");
+              setTimeout(function () {
+                $("#thanks1").addClass("hidden");
+                $("#thanks2").removeClass("hidden");
+              }, 3000);
+            },
+            error: function (error) {
+              // Handle error response
+              alert("An error occurred while submitting the form.");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
