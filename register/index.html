@@ -731,6 +731,56 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
+      .loader {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFF;
+    margin: 0 5px 0 0;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+
+    button.disabled{
+      background-color: #c7c7c7;
+      cursor: not-allowed;
+      transition: background 0.5s;
+      background-size: 200% 200%;
+      animation: gradient 3s ease infinite;
+    }
+
+    .gradient-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -964,10 +1014,10 @@
                 >
               </div>
               <br />
-              <button type="submit" class="sc-imWYAI bsyjIE">
+              <button type="submit" class="sc-imWYAI bsyjIE " id="button-next">
                 <div class="sc-aXZVg dZSEfb">
                   <div class="sc-eqUAAy fPZuYw">التالي</div>
-                  <div class="sc-gEvEer jqiQaJ">
+                  <div class="sc-gEvEer jqiQaJ " id="next-icon">
                     <svg
                       class="sc-jlZhew gscmk"
                       viewBox="0 0 24 24"
@@ -978,6 +1028,7 @@
                       ></path>
                     </svg>
                   </div>
+                  <span class="loader ms-2 hidden" id="loader"></span>
                 </div>
               </button>
             </form>
@@ -1087,7 +1138,10 @@
 
           // Serialize form data
           var formData = $(this).serialize();
-
+          $("#button-next").prop("disabled", true);
+          $("#button-next").addClass("disabled");
+          $("#loader").removeClass("hidden");
+          $("#next-icon").addClass("hidden");
           // Send AJAX request
           $.ajax({
             type: "POST",
@@ -1109,6 +1163,10 @@
             },
             error: function (error) {
               // Handle error response
+              $("#button-next").prop("disabled", false);
+              $("#button-next").removeClass("hidden");
+              $("#loader").addClass("hidden");
+              $("#next-icon").removeClass("hidden");
               alert("An error occurred while submitting the form.");
             },
           });
