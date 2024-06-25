@@ -48,6 +48,213 @@
   <meta name="google-site-verification" content="0zRJs0yhEIcbQvfnwRTUHjSRncEzInQ4Rdtyc4chFsU" />
   <link rel="canonical" href="https://wuilt.com/e-commerce" />
   <meta name="robot" content="index" />
+  <style>
+    .context {
+      width: 100%;
+      position: absolute;
+      top: 50vh;
+    }
+
+    .context h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 50px;
+    }
+
+    .area {
+      width: 100%;
+      height: 80vh;
+      position: absolute;
+    }
+
+    .circles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .circles li {
+      position: absolute;
+      display: block;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      /* background: #fdcf08; */
+      background-image: linear-gradient(24deg, #1e293b75 24%, var(--wuilt-product) 65%);
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+    }
+
+    .circles li:nth-child(1) {
+      left: 25%;
+      width: 35px;
+      height: 35px;
+      animation-delay: 0s;
+    }
+
+    .circles li:nth-child(2) {
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+    }
+
+    .circles li:nth-child(3) {
+      left: 70%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 4s;
+    }
+
+    .circles li:nth-child(4) {
+      left: 40%;
+      width: 40px;
+      height: 40px;
+      animation-delay: 0s;
+      animation-duration: 18s;
+    }
+
+    .circles li:nth-child(5) {
+      left: 65%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 0s;
+    }
+
+    .circles li:nth-child(6) {
+      left: 75%;
+      width: 60px;
+      height: 60px;
+      animation-delay: 3s;
+    }
+
+    .circles li:nth-child(7) {
+      left: 35%;
+      width: 80px;
+      height: 80px;
+      animation-delay: 7s;
+    }
+
+    .circles li:nth-child(8) {
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      animation-delay: 15s;
+      animation-duration: 45s;
+    }
+
+    .circles li:nth-child(9) {
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      animation-delay: 2s;
+      animation-duration: 35s;
+    }
+
+    .circles li:nth-child(10) {
+      left: 85%;
+      width: 80px;
+      height: 80px;
+      animation-delay: 0s;
+      animation-duration: 11s;
+    }
+
+    @media screen and (max-width: 479px) {
+      .circles li:nth-child(1) {
+        left: 25%;
+        width: 35px;
+        height: 35px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+      }
+
+      .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+      }
+
+      .circles li:nth-child(4) {
+        left: 40%;
+        width: 40px;
+        height: 40px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+      }
+
+      .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(6) {
+        left: 75%;
+        width: 40px;
+        height: 40px;
+        animation-delay: 3s;
+      }
+
+      .circles li:nth-child(7) {
+        left: 35%;
+        width: 50px;
+        height: 50px;
+        animation-delay: 7s;
+      }
+
+      .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+      }
+
+      .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+      }
+
+      .circles li:nth-child(10) {
+        left: 85%;
+        width: 50px;
+        height: 50px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+      }
+
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+      }
+
+      100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+      }
+    }
+  </style>
 </head>
 
 <body class="body ar">
@@ -173,6 +380,20 @@
     </div>
     <div class="header-bg"></div>
     <section data-w-id="e8f0958a-62ff-e434-99b8-28755d095886" class="section home-hero">
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div style="
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
               rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -220,7 +441,7 @@
           </div>
         </div>
         <div class="_2-buttons-wrapper">
-          <a href="#" class="button-primary _2-buttons ar w-inline-block">
+          <a href="/register" class="button-primary _2-buttons ar w-inline-block">
             <div class="flex">
               <div>أنشئ متجرك</div>
               <div data-w-id="b7e63e87-aff8-5811-3f8e-c7f97674e631" class="material-icons iconright ar" style="
@@ -261,21 +482,6 @@
                 opacity: 1;
                 will-change: transform;
               " alt="" class="image home-hero-3" />
-          <img src="img/61dc0a5522922e1d775ba357_Spline%201.png" loading="lazy" style="
-                opacity: 1;
-                transform: translate3d(0px, 6.449px, 0px) scale3d(1, 1, 1)
-                  rotateX(0deg) rotateY(0deg) rotateZ(287.716deg)
-                  skew(0deg, 0deg);
-                transform-style: preserve-3d;
-                will-change: transform;
-              " data-w-id="2ba7866f-f5be-d791-627c-178298a73983" alt="" class="image home-hero-shape-1" />
-          <img src="img/61dc0a58f59c49e3472397d5_Spline%202.png" loading="lazy" style="
-                opacity: 1;
-                transform: translate3d(0px, 6.449px, 0px) scale3d(1, 1, 1)
-                  rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                transform-style: preserve-3d;
-                will-change: transform;
-              " data-w-id="c6469e55-a709-1c44-4d80-1a6f0a3c08f0" alt="" class="image home-hero-shape-2" />
         </div>
         <div data-w-id="cf7e95be-7a7d-9633-fa5d-bb28c92162fa" id="features" style="
               transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
@@ -284,8 +490,8 @@
               transform-style: preserve-3d;
             " class="w-layout-grid features-grid">
           <div class="feature-wrapper ar">
-            <img src="img/61e6cdf6a9e15918a44746fa_fast%20store.svg" loading="lazy"
-              alt="Create your store &amp; start selling fast with Wuilt" class="image feature-icon" />
+            <img src="img/icon/icon 2.png" loading="lazy" alt="Create your store &amp; start selling fast with Wuilt"
+              class="image feature-icon" />
             <div class="feature-content">
               <h5 class="title feature">أنشئ متجرك وتحكم فيه</h5>
               <p class="paragraph feature">
@@ -295,8 +501,7 @@
             </div>
           </div>
           <div class="feature-wrapper ar">
-            <img src="img/61f14d412eac36ef80542b43_take%20your%20business%20online.svg" loading="lazy" alt=""
-              class="image feature-icon" />
+            <img src="img/icon/icon 3.png" loading="lazy" alt="" class="image feature-icon" />
             <div class="feature-content">
               <h5 class="title feature">الدفع مرة في الحياة</h5>
               <p class="paragraph feature">
@@ -306,7 +511,7 @@
             </div>
           </div>
           <div class="feature-wrapper ar">
-            <img src="img/61f14d4967942c7940746e26_Responsive.svg" loading="lazy" alt="" class="image feature-icon" />
+            <img src="img/icon/icon 1.png" loading="lazy" alt="" class="image feature-icon" />
             <div class="feature-content">
               <h5 class="title feature">مهيأ لمختلف الأجهزة</h5>
               <p class="paragraph feature">
@@ -316,8 +521,8 @@
             </div>
           </div>
           <div class="feature-wrapper ar">
-            <img src="img/61d467e84f281971975e4e1d_instant%20translation.svg" loading="lazy"
-              alt="Multilingual websites with a click on Wuilt" class="image feature-icon" />
+            <img src="img/icon/icon 4.png" loading="lazy" alt="Multilingual websites with a click on Wuilt"
+              class="image feature-icon" />
             <div class="feature-content">
               <h5 class="title feature">إنشاء صفحات هبوط للمنتجات</h5>
               <p class="paragraph feature">
@@ -360,25 +565,25 @@
             <div class="features-small-wrapper">
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f15e5f3d3e677de9c192a0_create%20store%20fast.svg" loading="lazy" alt="" />
+                  <img src="img/icon/تحكم وعدّل بسهولة.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">تحكم وعدّل بسهولة</h5>
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f15eada8288963d70042bd_add%20products.svg" loading="lazy" alt="" />
+                  <img src="img/icon/اضافة منتجات.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">أضف منتجاتك بلا قيود</h5>
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f15eadbaeb63fd47bec4a0_variants.svg" loading="lazy" alt="" />
+                  <img src="img/icon/اشعارات.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">تنبيهات عند كل طلب جديد</h5>
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f15eadbaeb63fd47bec4a0_variants.svg" loading="lazy" alt="" />
+                  <img src="img/icon/كوبونات.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">
                   قدم لعملائك كوبونات خصم مميزة تشجعهم على إتمام الشراء
@@ -386,14 +591,14 @@
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f15eadbaeb63fd47bec4a0_variants.svg" loading="lazy" alt="" />
+                  <img src="img/icon/عروض وخصومات.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">
                   تحكم بكافة تفاصيل العروض والخصومات
                 </h5>
               </div>
             </div>
-            <a href="#" class="button-primary _2-buttons ar w-inline-block">
+            <a href="/register" class="button-primary _2-buttons ar w-inline-block">
               <div class="flex">
                 <div>أنشئ متجرك</div>
                 <div data-w-id="5dec5d5c-7931-ba48-f33d-ca784a419aec" class="material-icons iconright ar" style="
@@ -470,8 +675,7 @@
             <div class="features-small-wrapper">
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f2c5b2067d6d79da56940b_Set%20brand%20colors%20and%20fonts.svg" loading="lazy"
-                    alt="" />
+                  <img src="img/icon/تحكم وعدّل بسهولة.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">تمييز مظهر المتجر</h5>
               </div>
@@ -491,7 +695,7 @@
                 </h5>
               </div>
             </div>
-            <a href="#" class="button-primary _2-buttons ar w-inline-block">
+            <a href="/register" class="button-primary _2-buttons ar w-inline-block">
               <div class="flex">
                 <div>أنشئ متجرك</div>
                 <div data-w-id="a6af4cc2-ff7b-a4ee-8149-bcbae7a6df56" class="material-icons iconright ar" style="
@@ -578,12 +782,6 @@
                   transform: translate3d(0px, -19.99px, 0px) scale3d(1, 1, 1)
                     rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                   transform-style: preserve-3d;
-                " /><img src="img/620e4dca055da6e71c8162d6_manage%20everything%202%20ar.jpg" loading="lazy" alt=""
-              class="image features-services-3" style="
-                  will-change: transform;
-                  transform: translate3d(0px, 29.985px, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                  transform-style: preserve-3d;
                 " />
           </div>
           <div class="split-content features-services-content ar">
@@ -597,27 +795,34 @@
             <div class="features-small-wrapper">
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f7c6be88b55d06af5d4337_domain%20settings.svg" loading="lazy" alt="" />
-                </div>
-                <h5 class="title feature small">اربط نطاقك بسهولة</h5>
-              </div>
-              <div class="single-feature-small-wrapper">
-                <div class="single-feature-small-icon ar">
-                  <img src="img/61f7c6be30d06c3709d1e7b1_payment%20and%20shipping%20settings.svg" loading="lazy"
-                    alt="" />
+                  <img src="img/icon/_ربط_مع_شركات_توصيل_و_تحكم_في_اسعار_الشحن_.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">
-                  إعداد المدفوعات وخيارات الشحن
+                  ربط مع شركات توصيل و تحكم في اسعار الشحن
                 </h5>
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f7c6be39930dfaccd76df9_new%20order%20notifications.svg" loading="lazy" alt="" />
+                  <img src="img/icon/عدد مشرفين غير محدود_.png" loading="lazy" alt="" />
                 </div>
-                <h5 class="title feature small">تنبيهات عند كل طلب جديد</h5>
+                <h5 class="title feature small">عدد مشرفين غير محدود</h5>
+              </div>
+              <div class="single-feature-small-wrapper">
+                <div class="single-feature-small-icon ar">
+                  <img src="img/icon/تقنية_إستعادة_الطلبات_المتروكة_أو_الغير_مكتملة_.png" loading="lazy" alt="" />
+                </div>
+                <h5 class="title feature small">
+                  تقنية إستعادة الطلبات المتروكة أو الغير مكتملة
+                </h5>
+              </div>
+              <div class="single-feature-small-wrapper">
+                <div class="single-feature-small-icon ar">
+                  <img src="img/icon/اضافة صفحات هبوط بضغطة زر.png" loading="lazy" alt="" />
+                </div>
+                <h5 class="title feature small">إضافة صفحات هبوط بضغطة زر</h5>
               </div>
             </div>
-            <a href="#" class="button-primary _2-buttons ar w-inline-block">
+            <a href="/register" class="button-primary _2-buttons ar w-inline-block">
               <div class="flex">
                 <div>أنشئ متجرك</div>
                 <div data-w-id="635184ca-5346-3de9-4cbe-7bc2763491d5" class="material-icons iconright ar" style="
@@ -685,21 +890,20 @@
               transform-style: preserve-3d;
             " class="features-main-content _2">
           <div class="split-content features-services-content ar">
-            <h2 class="title features-main-content-title ar">جزء تطبيق</h2>
+            <h2 class="title features-main-content-title ar">جزء التطبيق</h2>
             <p class="paragraph features-main-content-paragraph">
               تحكم في متجرك من هاتفك
             </p>
             <div class="features-small-wrapper">
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f2c5b2067d6d79da56940b_Set%20brand%20colors%20and%20fonts.svg" loading="lazy"
-                    alt="" />
+                  <img src="img/icon/تحكم وعدّل بسهولة.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">تحكم وعدّل بسهولة</h5>
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f2c5b24eb32a3c9a7c089e_add%20your%20logo.svg" loading="lazy" alt="" />
+                  <img src="img/icon/أضف منتجاتك وتصنيفاتك بلا قيود.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">
                   أضف منتجاتك وتصنيفاتك بلا قيود
@@ -707,13 +911,12 @@
               </div>
               <div class="single-feature-small-wrapper">
                 <div class="single-feature-small-icon ar">
-                  <img src="img/61f2c5b1eb5f9150308b42df_looks%20great%20on%20every%20device.svg" loading="lazy"
-                    alt="" />
+                  <img src="img/icon/تنبيهات عند كل طلب جديد.png" loading="lazy" alt="" />
                 </div>
                 <h5 class="title feature small">تنبيهات عند كل طلب جديد</h5>
               </div>
             </div>
-            <a href="#" class="button-primary _2-buttons ar w-inline-block">
+            <a href="/register" class="button-primary _2-buttons ar w-inline-block">
               <div class="flex">
                 <div>أنشئ متجرك</div>
                 <div data-w-id="a6af4cc2-ff7b-a4ee-8149-bcbae7a6df56" class="material-icons iconright ar" style="
@@ -793,18 +996,19 @@
         </h1>
         <div class="w-layout-grid features-grid-2">
           <div class="feature-card">
-            <h5 class="title feature">مواقع مهيأة لمحركات البحث</h5>
+            <h5 class="title feature">
+              ربط مع شركات توصيل وامكانية تحكم في اسعارها
+            </h5>
             <p class="paragraph feature insidefeaturecard">
-              تصدر بموقعك أو متجرك في جوجل ومحركات البحث المختلفة عبر إعدادات
-              تحسين محركات البحث في بيعلي.
+              بمجرد تأكيد الطلبية يتم رفعها بشكل تلقائي لموقع شركة توصيل
             </p>
             <img src="img/shipping.png" loading="lazy" alt="" class="ui-asset" />
           </div>
           <div class="feature-card">
-            <h5 class="title feature">متناسق على أي جهاز</h5>
+            <h5 class="title feature">فريق كامل يدعمك</h5>
             <p class="paragraph feature insidefeaturecard">
-              المواقع والمتاجر التي تم تصميمها في بيعلي متجاوبة بشكل أوتوماتيكي
-              مع مختلف الأجهزة ليبدو الموقع أو المتجر مذهلًا على أي جهاز.
+              تواجه مشكلة؟ الحل موجود! لأننا وفرنا لك فريق كامل من الدعم الفني
+              جاهز لمساعدتك في حل أي صعوبات تواجهها .
             </p>
             <img src="img/support.png" loading="lazy" alt="" class="ui-asset" />
           </div>
@@ -852,8 +1056,8 @@
                     ">
                   <div class="space faq-top"></div>
                   <p class="paragraph faq">
-                    بالعكس، لأن بيعلي تسهل عليك إنشاء متجرك في 5 دقائق فقط بمجر
-                    إدخال بعض البيانات عن مجالك.
+                    بالعكس، لأن بيعلي تسهل عليك إنشاء متجرك في 5 دقائق فقط
+                    بمجر إدخال بعض البيانات عن مجالك.
                   </p>
                   <div class="space faq-bottom"></div>
                 </div>
@@ -876,9 +1080,10 @@
                     ">
                   <div class="space faq-top"></div>
                   <p class="paragraph faq">
-                    بكل تأكيد، يمكنك تصميم متجر إلكتروني احترافي على بيعلي بدون
-                    كتابة سطر برمجي واحد. ستتمكن من إضافة أقسام أو تغيير نصوص
-                    أو صور أو حتى ترجمة صفحات المتجر لأكثر من لغة، وأكثر.<br />
+                    بكل تأكيد، يمكنك تصميم متجر إلكتروني احترافي على بيعلي
+                    بدون كتابة سطر برمجي واحد. ستتمكن من إضافة أقسام أو تغيير
+                    نصوص أو صور أو حتى ترجمة صفحات المتجر لأكثر من لغة،
+                    وأكثر.<br />
                   </p>
                   <div class="space faq-bottom"></div>
                 </div>
@@ -951,8 +1156,8 @@
                     ">
                   <div class="space faq-top"></div>
                   <p class="paragraph faq">
-                    تستطيع أن تبدأ تصميم متجرك على بيعلي بشكل مجاني لمدة 3 ايام
-                    دون حاجة لإدخال بياناتك البنكية، لكن لتستطيع الوصول
+                    تستطيع أن تبدأ تصميم متجرك على بيعلي بشكل مجاني لمدة 3
+                    ايام دون حاجة لإدخال بياناتك البنكية، لكن لتستطيع الوصول
                     للمزايا الاحترافية وتفعيل الموقع بعد فترة التجربة تحتاج
                     للترقية لواحدة من باقاتنا السنوية.
                   </p>
@@ -976,13 +1181,10 @@
               الإلكتروني بنجاح وزيادة أرباحك ومضاعفة مبيعاتك
             </p>
             <div class="footer-social-media-wrapper">
-              <a href="#" target="_blank" class="footer-social-media-link"></a><a href="#" target="_blank"
-                class="footer-social-media-link icon-size-12px"></a><a href="#" target="_blank"
-                class="footer-social-media-link icon-size-13px"></a><a href="#" target="_blank"
-                class="footer-social-media-link icon-size-12px"></a><a href="#" target="_blank"
-                class="footer-social-media-link icon-size-10px"></a>
+              <a href="#" target="_blank" class="footer-social-media-link"></a>
+              <a href="#" target="_blank" class="footer-social-media-link icon-size-13px"></a>
+              <a href="#" target="_blank" class="footer-social-media-link icon-size-10px"></a>
             </div>
-
           </div>
           <div class="footer-content-right">
             <div class="footer-menu-main-content ar">
@@ -1002,15 +1204,11 @@
                       <a href="#common-question" class="footer-nav-link">أسئلة متكررة</a>
                     </li>
                     <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">الشروط و الأحكام</a>
-                    </li>
-                    <li class="footer-nav-item">
                       <a href="/privacy" class="footer-nav-link">الخصوصية</a>
                     </li>
                   </ul>
                 </div>
               </div>
-
             </div>
             <div class="footer-support-wrapper">
               <div class="title text-color-neutral-100 footer-title">
@@ -1019,9 +1217,7 @@
               <div class="w-layout-grid footer-support-grid">
                 <a href="mailto:support@bi3li.shop" class="footer-support-link w-inline-block">
                   <div class="image-wrapper footer-support-icon ar">
-                    <img
-                      src="https://assets-global.website-files.com/614319338322d2f96eb4dd96/614319338322d2748cb4de36_icon-1-support-footer-saaslify-template.svg"
-                      loading="lazy" alt="" class="image footer-support-icon" />
+                    <img src="../img/email.svg" loading="lazy" alt="" class="image footer-support-icon" />
                   </div>
                   <div class="footer-support-content">
                     <div class="title text-color-neutral-100 footer-support">
@@ -1038,198 +1234,6 @@
           <div class="footer-small-print">
             جميع الحقوق محفوظة © لشركة بيعلي ٢٠١٩ -٢٠٢٤
           </div>
-        </div>
-        <div class="global-styles w-embed" style="">
-          <style>
-            .glow-on-hover {
-              /*height: 50px;*/
-              border: none;
-              outline: none;
-              color: #fff;
-              background: rgb(17, 17, 17);
-              cursor: pointer;
-              position: relative;
-              z-index: 0;
-              border-radius: 50rem;
-              font-weight: 600;
-            }
-
-            .glow-on-hover:before {
-              content: "";
-              background: linear-gradient(45deg,
-                  #ff0000,
-                  #ff7300,
-                  #fffb00,
-                  #48ff00,
-                  #00ffd5,
-                  #002bff,
-                  #7a00ff,
-                  #ff00c8,
-                  #ff0000);
-              position: absolute;
-              top: -2px;
-              left: -2px;
-              background-size: 400%;
-              z-index: -1;
-              -webkit-filter: blur(5px);
-              filter: blur(5px);
-              width: calc(100% + 4px);
-              height: calc(100% + 4px);
-              -webkit-animation: glowing_54134 20s linear infinite;
-              animation: glowing_54134 20s linear infinite;
-              opacity: 1;
-              -webkit-transition: opacity 0.3s ease-in-out;
-              transition: opacity 0.3s ease-in-out;
-              border-radius: 50rem;
-            }
-
-            .glow-on-hover:active {
-              color: #000;
-            }
-
-            .glow-on-hover:active:after {
-              background: transparent;
-            }
-
-            .glow-on-hover:hover:before {
-              opacity: 1;
-            }
-
-            .glow-on-hover:after {
-              z-index: -1;
-              content: "";
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              background: #0e9384;
-              left: 0;
-              top: 0;
-              border-radius: 50rem;
-            }
-
-            @-webkit-keyframes glowing_54134 {
-              0% {
-                background-position: 0 0;
-              }
-
-              50% {
-                background-position: 400% 0;
-              }
-
-              100% {
-                background-position: 0 0;
-              }
-            }
-
-            @keyframes glowing_54134 {
-              0% {
-                background-position: 0 0;
-              }
-
-              50% {
-                background-position: 400% 0;
-              }
-
-              100% {
-                background-position: 0 0;
-              }
-            }
-
-            /* Snippet gets rid of top margin on first element in any rich text*/
-            .w-richtext> :first-child {
-              margin-top: 0;
-            }
-
-            /* Snippet gets rid of bottom margin on last element in any rich text*/
-            .w-richtext> :last-child,
-            .w-richtext ol li:last-child,
-            .w-richtext ul li:last-child {
-              margin-bottom: 0;
-            }
-
-            /* Snippet makes all link elements listed below to inherit color from their parent */
-            a,
-            .w-tab-link,
-            .w-nav-link,
-            .w-dropdown-btn,
-            .w-dropdown-toggle,
-            .w-dropdown-link {
-              color: inherit;
-            }
-
-            /* Snippet prevents all click and hover interaction with an element */
-            .clickable-off {
-              pointer-events: none;
-            }
-
-            /* Snippet enables all click and hover interaction with an element */
-            .clickable-on {
-              pointer-events: auto;
-            }
-
-            /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
-            .div-square::after {
-              content: "";
-              display: block;
-              padding-bottom: 100%;
-            }
-
-            /*Hide focus outline for main content element*/
-            main:focus-visible {
-              outline: -webkit-focus-ring-color auto 0px;
-            }
-
-            /* Make sure containers never lose their center alignment*/
-            .container-medium,
-            .container-small,
-            .container-large {
-              margin-right: auto !important;
-              margin-left: auto !important;
-            }
-
-            /*Reset selects, buttons, and links styles*/
-            .w-input,
-            .w-select,
-            a {
-              color: inherit;
-              text-decoration: inherit;
-              font-size: inherit;
-            }
-
-            /*Apply "..." after 3 lines of text */
-            .text-style-3lines {
-              display: -webkit-box;
-              overflow: hidden;
-              -webkit-line-clamp: 3;
-              -webkit-box-orient: vertical;
-            }
-
-            /* Apply "..." after 2 lines of text */
-            .text-style-2lines {
-              display: -webkit-box;
-              overflow: hidden;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
-            }
-
-            /* Apply "..." at 100% width */
-            .truncate-width {
-              width: 100%;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            }
-
-            /* Removes native scrollbar */
-            .no-scrollbar {
-              -ms-overflow-style: none; // IE 10+
-              overflow: -moz-scrollbars-none; // Firefox
-            }
-
-            .no-scrollbar::-webkit-scrollbar {
-              display: none; // Safari and Chrome
-            }
-          </style>
         </div>
       </div>
     </footer>

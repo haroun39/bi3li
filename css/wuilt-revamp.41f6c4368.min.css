@@ -4416,7 +4416,7 @@ figcaption {
 
 .footer {
   border-top: 1px none var(--neutral-400);
-  background-color: var(--blue-gray-900);
+  background-color: black;
   padding-top: 59px;
   padding-bottom: 29px;
   overflow: hidden
@@ -4439,7 +4439,8 @@ figcaption {
 }
 
 .footer-nav.last {
-  margin-right: 0
+  margin-right: 0;
+  padding-right: 0
 }
 
 .footer-nav.ar {
@@ -6602,7 +6603,7 @@ figcaption {
   border-radius: 10px;
   width: 44%;
   position: absolute;
-  bottom: 32px;
+  bottom: -10px;
   right: 40px;
   box-shadow: 0 5px 23px rgba(40, 40, 43, .06)
 }
@@ -7947,7 +7948,7 @@ figcaption {
 }
 
 .footer-support-link {
-  background-color: var(--neutral-700);
+  background-color: rgba(255, 255, 255, .2);
   color: var(--blue-gray-500);
   border-radius: 11px;
   padding: 25px;
@@ -7962,7 +7963,7 @@ figcaption {
 }
 
 .footer-support-text {
-  color: var(--neutral-400);
+  color: #bcbcbc;
   font-size: 14px;
   line-height: 1.714em
 }
@@ -7985,7 +7986,7 @@ figcaption {
 }
 
 .footer-social-media-link {
-  background-color: var(--neutral-700);
+  background-color: rgba(255, 255, 255, .2);
   color: var(--neutral-100);
   border-radius: 9999px;
   justify-content: center;
@@ -8006,7 +8007,7 @@ figcaption {
 
 .footer-social-media-link:hover {
   background-color: var(--wuilt-product);
-  color: var(--neutral-800)
+  color: black
 }
 
 .footer-social-media-link.icon-size-12px {
@@ -10164,8 +10165,7 @@ figcaption {
   color: var(--blue-gray-800);
   letter-spacing: -.04em;
   margin-bottom: 4px;
-  font-family: Inter, sans-serif;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 40px
 }
@@ -10323,7 +10323,7 @@ figcaption {
 
 .plan-type {
   z-index: 5;
-  color: var(--amber-600);
+  color: black;
   letter-spacing: -.04em;
   font-size: 22px;
   font-weight: 700;
@@ -10332,7 +10332,7 @@ figcaption {
 }
 
 .plan-type.featured {
-  color: #fff
+  color: black
 }
 
 .plan-type.mail {
@@ -10404,7 +10404,7 @@ figcaption {
 }
 
 .pricing-top-featured {
-  background-color: var(--amber-600);
+  background-color: var(--wuilt-product);
   color: #fff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -10434,7 +10434,7 @@ figcaption {
 }
 
 .pricing-feature.highlight {
-  color: var(--amber-600)
+  color: var(--wuilt-product)
 }
 
 .pricing-feature.withsub {
@@ -10628,7 +10628,7 @@ figcaption {
 }
 
 .bestvalue-badge-txt {
-  color: var(--amber-600)
+  color: black
 }
 
 .bestvalue-badge-txt.start {
@@ -21839,7 +21839,8 @@ figcaption {
   }
 
   .title.home-hero {
-    max-width: 520px
+    max-width: 520px;
+    font-size: 2.9rem !important
   }
 
   .title.home-hero.main-heading-h1.new {
