@@ -4341,7 +4341,7 @@ figcaption {
 .header {
   background-color: rgba(221, 221, 221, 0);
   padding-top: 28px;
-  padding-bottom: 28px
+  padding-bottom: 15px
 }
 
 .header.start {
