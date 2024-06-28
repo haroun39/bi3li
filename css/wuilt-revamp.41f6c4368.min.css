@@ -6129,9 +6129,9 @@ figcaption {
 .image.home-hero-2 {
   z-index: 2;
   border-radius: 16px;
-  max-width: 312px;
+  max-width: 170px;
   position: absolute;
-  left: -20px
+  left: 30px
 }
 
 .image.home-hero-3 {
@@ -19556,7 +19556,7 @@ figcaption {
   }
 
   .image.home-hero-2 {
-    max-width: 23%
+    max-width: 15%
   }
 
   .image.home-hero-3 {
